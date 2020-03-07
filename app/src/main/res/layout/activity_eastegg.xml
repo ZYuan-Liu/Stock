@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/content_home_exper"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@color/title_blue" />
+
+    <include layout="@layout/layout_base_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="项目组成员介绍の究极版ớ ₃ờ"
+                android:textColor="@color/bgColor_overlay_black"
+                android:textSize="19sp" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="4dp"
+                android:layout_gravity="right"
+                android:text="PS:这真的只是一个正经的成员介绍"
+                android:textColor="@color/textgray2"
+                android:drawableLeft="@mipmap/nan_1"
+
+                />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="项目组成员1：高老师"
+                android:textColor="@color/textgray" />
+
+            <TextView
+                android:layout_marginLeft="2dp"
+                android:padding="3dp"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="    为啥第一个是高老师？看名字就知道了，唐门学术巨擘，高水平论文信手拈来。"
+                android:textColor="@color/textgray1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/gao_3" />
+
+            <TextView
+                android:padding="3dp"
+                android:textColor="@color/textgray1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="万能的高老师，游走支援于各大项目，请再帮我们一次！" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="190dp"
+                android:src="@mipmap/gao_1" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="项目组成员2：刘江蓝瘦"
+                android:textColor="@color/textgray" />
+
+            <TextView
+                android:layout_marginLeft="2dp"
+                android:padding="3dp"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textgray1"
+                android:text="    河南大美女，全栈工程师，B站3000粉，兼唐门雀神、棋圣，标准口头禅：“这不重要！昂？”" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/nan_2" />
+
+            <TextView
+                android:layout_marginLeft="2dp"
+                android:padding="3dp"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textgray1"
+                android:text="    另外本应用登录界面的视频剪辑也出全栈工程师之手，下次还是安排上小程序叭！" />
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="170dp"
+                android:src="@mipmap/nan_3" />
+
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="项目组成员3：顾辣"
+                android:textColor="@color/textgray" />
+
+            <TextView
+                android:layout_marginLeft="2dp"
+                android:padding="3dp"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textgray1"
+                android:text="    古辣辣，金克斯高玩（实际上还是小法比较厉害），网瘾少女，但也是学术大佬，目前已有c刊论文，我酸了！" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@mipmap/la_2" />
+
+            <TextView
+                android:layout_marginLeft="2dp"
+                android:padding="3dp"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textgray1"
+                android:text="    辣姐，请掏出小法带我们飞吧！" />
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="170dp"
+                android:src="@mipmap/la_1" />
+
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="项目组成员4：延哲里的山路十八弯"
+                android:textColor="@color/textgray" />
+
+            <TextView
+                android:layout_marginLeft="2dp"
+                android:padding="3dp"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textgray1"
+                android:text="    本项目的后台支撑，仅次于河南大美女的全栈工程师，什么接口？分分钟给你写完。" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@mipmap/zhe_1" />
+
+            <TextView
+                android:layout_marginLeft="2dp"
+                android:padding="3dp"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textgray1"
+                android:text="    唐门舔圣（可以把任何人都舔得很舒服！）" />
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="170dp"
+                android:src="@mipmap/zhe_2" />
+
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="项目组成员5：玉树临风的长沙老江湖"
+                android:textColor="@color/textgray" />
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="2dp"
+                android:padding="3dp"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textgray1"
+                android:text="    在下就不上图了~！把老夫想象成吴彦祖就行了！本app写得不好之处还请见谅，仅供内部参考使用~" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

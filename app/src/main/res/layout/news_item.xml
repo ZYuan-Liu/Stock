@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+
+        <RelativeLayout
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rl1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_centerVertical="true"
+                android:layout_width="100dp"
+                android:layout_height="80dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_toLeftOf="@id/rl1"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tx1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="新闻标题"
+            android:textColor="@color/textblack"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp" />
+
+        <LinearLayout
+            android:layout_marginBottom="3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tx2"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新浪网"
+                android:textColor="@color/textgray2" />
+
+            <TextView
+                android:id="@+id/tx3"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2019-08-22 08:00"
+                android:textColor="@color/textgray2" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/linegray" />
+</LinearLayout>

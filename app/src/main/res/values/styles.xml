@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Application Theme-->
+    <style name="AppTheme" parent="@android:style/Theme.NoTitleBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--SplashActivity Theme-->
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>  <!-- 透明背景 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@mipmap/bg</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+</resources>

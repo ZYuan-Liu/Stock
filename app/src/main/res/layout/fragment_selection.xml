@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/content_home_exper"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@color/title_blue" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/content_home_exper">
+
+        <RelativeLayout
+            android:id="@+id/search_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/title_blue" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:id="@+id/ed_text"
+                android:layout_width="220dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_bg"
+                android:hint="添加标签"
+                android:padding="5dp"
+                android:textColorHint="@color/textgray1"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignRight="@id/ed_text"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:src="@mipmap/nav_search" />
+
+            <RelativeLayout
+                android:layout_toRightOf="@id/ed_text"
+                android:id="@+id/rl_quickmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/nav_qrcode" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_top_root"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+
+        <TextView
+            android:background="@color/white"
+            android:id="@+id/tv_left_title"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:gravity="left|center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:text="股票名称"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <com.example.stockrecommendations.util.CustomHorizontalScrollView
+            android:background="@color/white"
+            android:id="@+id/hor_scrollview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:fillViewport="true"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_tab_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"
+                    android:scrollbars="none">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </RelativeLayout>
+
+        </com.example.stockrecommendations.util.CustomHorizontalScrollView>
+
+
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:background="@color/white"
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:overScrollMode="never"
+            android:id="@+id/recycler_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

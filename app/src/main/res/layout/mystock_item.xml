@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:padding="3dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_stock_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="股票名称"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_stock_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="300121"
+                android:textColor="@color/textgray2"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/now_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56.56"
+            android:textColor="@color/stockred" />
+
+        <TextView
+            android:id="@+id/now_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.45%"
+            android:textColor="@color/stockred" />
+
+        <TextView
+            android:id="@+id/now_volum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="200亿"
+            android:textColor="@color/stockred" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#D8D8D8" />
+
+</LinearLayout>

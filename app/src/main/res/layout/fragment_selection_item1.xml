@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="80dp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tv_left_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="股票名称"
+                android:textColor="#000000" />
+
+            <TextView
+                android:textColor="@color/textgray2"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                android:text="300121"
+                android:id="@+id/tv_stock_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <com.example.stockrecommendations.util.CustomHorizontalScrollView
+            android:id="@+id/hor_item_scrollview"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_item_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"
+                    android:scrollbars="none">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </RelativeLayout>
+        </com.example.stockrecommendations.util.CustomHorizontalScrollView>
+        >
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#D8D8D8" />
+</LinearLayout>
